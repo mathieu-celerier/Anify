@@ -1,0 +1,13 @@
+{% extends "layouts/default.html" %}
+{% block head %}
+
+{% endblock head %}
+
+{% block script %}
+    <script>
+        $(document).ready(function() {
+            playlistModal();
+            window.location.replace("http://localhost:7000/fill_user_anify_playlist");
+        })
+    </script>
+{% endblock script %}

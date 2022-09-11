@@ -1,0 +1,148 @@
+html{
+  height: 100%;
+}
+
+body {
+  background: #0f1418;
+  color: #333333;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #cbd5db;
+}
+
+.bg-steel {
+  background-color: #161d22;
+}
+
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.jumbotron{
+  background: none;
+  border: transparent;
+}
+
+.jumbotron .lead{
+  color: #babdbe;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.bd-example-modal-lg{
+  background: linear-gradient(-45deg, #054f7d,#00647c, #00323e, #022032, #0086a6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.vertical-alignment-helper {
+  display:table;
+  height: 100%;
+  width: 100%;
+  pointer-events:none;
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events:none;
+}
+
+.bd-example-modal-lg .modal-dialog .modal-content{
+  background-color: transparent;
+  border: none;
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width:inherit;
+  max-width:inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+  height:inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events:all;
+}
+
+.username-label{
+  color: #cbd5db;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #cbd5db;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-link.active {
+  font-weight: 500;
+}
+
+/* ---------------------------------------- */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: calc(50% - 40px)
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

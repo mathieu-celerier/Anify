@@ -1,0 +1,13 @@
+{% extends "layouts/default.html" %}
+{% block head %}
+
+{% endblock head %}
+
+{% block script %}
+<script>
+    $(document).ready(function() {
+        animeModal();
+        window.location.replace("http://localhost:7000/load_anime_list");
+    })
+</script>
+{% endblock script %}
